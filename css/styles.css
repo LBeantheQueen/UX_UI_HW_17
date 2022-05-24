@@ -1,20 +1,37 @@
-.inline-block {
-    display: inline-block;
-    vertical-align: top;
+
+.navigation-bar {
+    width: 100%;  /* i'm assuming full width */
+    height: 80px; /* change it to desired width */
+background-color: blue;
 }
 .logo {
-    width: 23%;
-    padding: 1%;
-    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 15px;    /* if you want it vertically middle of the navbar. */
 }
-nav {
-    width: 73%;
-    padding: 1%;
+.navigation-bar > a {
+    display: block;
+    padding: 8px; 
+    background-color: red; 
 }
+
+
 ul {
-    width: 50%;
-    margin-left: auto;
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
 }
+
+li {
+    display: inline;
+    text-align: right;
+}
+
+
 .heroImg {
     height: 600px;
     padding: 25px;
@@ -31,10 +48,5 @@ footer ul {
     display: inline-block;
     vertical-align: top;
     padding: 1%;
-}
-button {
-    background-color: pink;
-}
-h2 {
-    color: blue;
+    list-style-type: none;
 }
